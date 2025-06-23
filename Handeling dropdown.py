@@ -16,6 +16,15 @@ dropDownElement = myWait.until(EC.presence_of_element_located((By.XPATH, '//sele
 dropDown = Select(dropDownElement)
 
 dropDown.select_by_visible_text("New Zealand")
+# dropDown.select_by_value('153')
+# dropDown.select_by_index(153)
+
+# Capture all options in a dropdown menu
+allOptions = dropDown.options
+
+# Display all options in terminal window
+for option in allOptions:
+    print(option.text)
 
 time.sleep(10)
 driver.quit()
