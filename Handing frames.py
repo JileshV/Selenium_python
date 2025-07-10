@@ -16,5 +16,6 @@ driver.find_element(By.XPATH, '//input[@type="text"]').send_keys('Jilesh')
 
 # driver.switch_to.frame('Frame Name')  To switch to a particular frame
 # driver.switch_to.default_content()    To switch back to main page
+# driver.switch_to.parent_frame()     To switch to previous/parent frame
 
 time.sleep(5)
